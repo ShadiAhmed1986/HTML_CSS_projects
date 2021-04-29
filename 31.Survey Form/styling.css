@@ -1,0 +1,90 @@
+body{
+    background-color: #E84D38;
+}
+h1{
+    font-family: jua, sans-serif;
+    text-align: center;
+    font-size: 54px;
+}
+#description{
+    font-family: Jua, sans-serif;
+    font-size: 45px;
+    text-align: center;
+}
+.survey-container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+}
+.question{
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+}
+.leftside{
+    width: 40%;
+    font-family: Roboto, Tahoma;
+    display: inline-block;
+    text-align: right;
+    padding: 10px
+}
+.rightside{
+    width: 40%;
+    font-family: Jua, sans-serif;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+}
+textarea{
+    widows: 100%;
+    padding: 10px;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+button{
+    color: black;font-family: Jua,sans-serif;
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: white;
+    border-color:  rgb(232, 76, 55);
+    border-radius: 4px;
+    width: 30%;
+    align-self: center;
+}
+button:hover{
+    animation-name: submission;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+}
+@keyframes submission{
+    100%{
+        background-color: rgb(232, 76, 55);
+    }
+}
+@media screen and (max-width:600px){
+    .question{
+        display: block;
+    }
+    .rightside{
+        width: 100%;
+        text-align: left;
+    }
+    .leftside{
+        width: 100%;
+        text-align: left;
+    }
+    textarea{
+        width: 80%;
+        
+    }
+}

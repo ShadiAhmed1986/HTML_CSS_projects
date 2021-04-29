@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styling.css"> 
+<link href="https://fonts.googleapis.com/css?family=Jua|Roboto" rel="stylesheet">    
+<title>Survey Form</title>
+    <body>
+    <h1>Survey Form</h1>
+        <div class="survey-container">
+                <p id="description">We want to know more about our Foodies!</p>
+            <div class="container">
+                <form>
+                    <div class="question">
+                        <div class="leftside">
+                            <label id="name-label">Name:</label>
+                        </div>
+                        <div class="rightside">
+                            <input type="text" id="name" class="entry-field" placeholder="Enter name here" required>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <div class="leftside">
+                            <label id="email-label">Email:</label>
+                        </div>
+                        <div class="rightside">
+                            <input type="email" id="email" class="entry-field" placeholder="Enter Email here" required>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <div class="leftside">
+                            <label id="age-label">Age:</label>
+                        </div>
+                        <div class="rightside">
+                            <input type="number" id="number" placeholder="Years" class="entry-field" min="0" max="120" required>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <div class="leftside">
+                            <label id="cuisine-style">What is your favorite style of cuisine? (Check all that apply).</label>
+                        </div>
+                        <div class="rightside">
+                            <label for="american"><input type="checkbox" id="american" value="american">American</label><br>
+                            <label for="chinese"><input type="checkbox" id="chinese" value="chinese">Chinese</label><br>
+                            <label for="italian"><input type="checkbox" id="italian" value="italian">Italian</label><br>
+                            <label for="indian"><input type="checkbox" id="indian" value="indian">Indian</label><br>
+                            <label for="mediterranian"><input type="checkbox" id="mediterranian" value="mediterranian">Mediterranian</label><br>
+                            <label for="mexican"><input type="checkbox" id="mexican" value="mexican">Mexican</label><br>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <div class="leftside">
+                            <label id="recommend">How likely are you to recommend our restaurant to someone else?</label>
+                        </div>
+                        <div class="rightside">
+                            <label for="definitely"><input type="radio" id="definitely" name="recommendation" value="definitely">Definitely</label><br>
+                            <label for="maybe"><input type="radio" id="maybe" name="recommendation" value="maybe">Maybe</label><br>
+                            <label for="notreally"><input type="radio" id="notreally" name="recommendation" value="notreally">Not Really</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <div class="leftside">
+                            <label>What is your favorite menu item?</label>
+                        </div>
+                    <div class="rightside">
+                        <select name="menu-item" id="dropdown">
+                            <option value="pizza">Pizza</option>
+                            <option value="burrito">Burrito</option>
+                            <option value="burger">Burger</option>
+                            <option value="lasagna">Lasagna</option>
+                            <option value="sushi">Sushi</option>
+                        </select>
+                    </div>
+                    </div> 
+                    
+                    <div class="question">
+                        <div class="leftside">
+                            <label id="favorite-drink">What is your favorite drink?</label>
+                        </div>
+                        <div class="rightside">
+                            <select name="drink-item">
+                                <option value="water">Water</option>
+                                <option value="coca-cola">Coca-cola</option>
+                                <option value="pepsi">Pepsi</option>
+                                <option value="lemonade">Lemonade</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <div class="leftside">
+                            <label id="comments">Any comments or suggestions?</label>
+                        </div>
+                        <div class="rightside">
+                            <textarea id="comment-box" class="entry-field" rows="4" cols="50" placeholder="Enter your comment here..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="button-container">
+                        <button type="submit" class="button" id="submit" >Submit</button>
+                    </div>
+                
+                </form>
+            
+            </div>
+                
+        </div>
+    
+    
+    
+    
+    </body>

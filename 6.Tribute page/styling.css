@@ -1,0 +1,38 @@
+.container{
+    background-color: #eeeeee;
+    border-radius: 8px; 
+    width: 1150px;
+    margin: 30px auto;
+}
+.title{
+    text-align: center;
+    padding: 25px 25px 0 ;
+}
+.bio p{
+    padding:0 45px;
+    line-height: 20px;
+    text-align: justify;
+}
+.image{
+    margin: auto;
+    width: 500px;
+}
+img{
+    width: 500px;
+    border-radius: 50%;
+}
+.imgdesc{
+    padding: 1px;
+    text-align: center;
+    background-color: #dddddd;   
+}
+.subcon2{
+    padding: 45px;
+    text-align: justify
+}
+.read-more{
+    text-align: center;
+}
+footer{
+    margin: 0 140px;
+}

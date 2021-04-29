@@ -1,0 +1,17 @@
+input[type=text]{
+    width: 130px;
+    padding: 12px 20px 12px 40px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: white;
+    background-image: url(images/search.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus{
+    width:100%;
+}

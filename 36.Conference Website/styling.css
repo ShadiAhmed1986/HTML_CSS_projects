@@ -1,0 +1,442 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: abel;
+}
+body{
+     background-color: #d8c3a5;
+}
+.header{
+    padding:30px 80px;
+    width: 1200px;
+    height: auto;
+    margin: auto;
+}
+.logo{
+    width: 40%;
+    height: auto;
+    float: left;   
+}
+.logo h1 a{
+    text-decoration: none;
+    font-size: 60px;
+    color: white;
+    text-transform: uppercase;
+    font-family:sans-serif;
+    text-shadow:0 8px 8px black;
+}
+.logo:hover{
+    letter-spacing: 20px;
+    transition: 0.4s ease-in-out;
+}
+.logo:hover a{
+   color: #e98074;
+}
+.menu-bar{
+    float: right;
+    font-size:20px;
+}
+.date{
+    text-align: end;
+    color: #8e8d8a;
+}
+.menu{
+    margin-top: 20px;
+    text-align: center;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 8px 10px 8px;
+    text-transform: uppercase;
+}
+.menu a:hover{
+    color: #e98074;
+    border-bottom: 2px solid #e98074;
+    box-shadow: 2px 2px 2px 2px #e98074;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+.active-menu-btn{
+    color: #e98074;
+    border-bottom: 2px solid #e98074;
+    box-shadow: 2px 2px 2px 2px #e98074;
+    border-radius: 8px;
+}
+.clear{
+    width: 100%;
+    height: 200px;
+}
+.main-info{
+    margin: auto;
+    width: 900px;
+    text-align: center; 
+}
+.main-info h1{
+    color: #8e8d8a;
+    font-size: 40px
+}
+.main-info p{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.main-info a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 20px 24px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+.main-info a:hover{
+    background-color: white;
+    color: #d8c3a5;
+    transition: 0.5s ease;
+    box-shadow:4px 4px 4px 4px #e98074;
+}
+.main-topic{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 1500px;
+}
+.cards{
+    width:300px;
+    height: auto;
+    display: inline-block;
+    margin:70px 20px;
+}
+.topic{
+    text-transform: uppercase;
+    color:#8e8d8a;
+    font-weight: bold;
+}
+.image{
+    width: 300px;
+    height: 200px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+.image:hover{
+    box-shadow: 4px 4px 4px grey;
+}
+#image1{
+   background: url(images/speaker.jpg) no-repeat center;  
+   background-size: cover;
+}
+#image2{
+    background: url(images/auditorium.jpg) no-repeat center;
+    background-size: cover;
+}
+#image3{
+    background: url(images/Chicago_Theater.jpg) no-repeat center;
+    background-size: cover;
+}
+.cards h2{
+    padding: 0 0 18px 0;
+}
+h2 a{
+    text-decoration: none;
+    color: #8e8d8a;
+}
+h2 a:hover{
+    color: black
+}
+.footer{
+    width: 1500px;
+    height: 80px;
+    padding: 30px 30px;
+    font-size: 18px
+}
+.copyright{
+    width: 70%;
+    height: auto;
+    float: left;
+    color: #8e8d8a;
+}
+.menu-footer{
+    width: 30%;
+    height: auto;
+    float: right;
+}
+.menu-footer a{
+    text-decoration: none;
+    color: white;
+    padding: 0 8px;
+    float: left;
+}
+.menu-footer a:hover{
+    color: #e98074;
+    font-size: 22px;
+}
+
+/*This is for the Speakers page*/
+.speakers-main-topic{
+    width: 1500px;
+    margin: auto;
+    height: 500px;
+    padding: 50px 200px;
+    background-color: white;
+}
+.speakers-main-info{
+    width:1500px;
+    background-image: linear-gradient(to right, #e85a4f, #e98074);
+    text-align: center;
+    margin:0 auto; 
+    padding: 30px 200px;
+}
+.speakers-main-info h1{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #eae7dc;
+}
+.speakers-main-info p{
+    font-size: 22px;
+    color: white;
+}
+.text-and-info{
+    position: relative;
+}
+.all-card{
+    width: 250px;
+    height: auto;
+    position: absolute;
+    right: 100px;
+    top:180px;
+}
+.text-info{
+    width: 60%;
+    height: auto;
+    float: left;
+    color:#4c4545;
+}
+.text-info h3{
+    padding:20px 0;
+}
+.text-info p{
+    font-size: 18px;
+}
+.photo-card{
+    width: 250px;
+    height: 180px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    float: right;
+    position: relative;
+}
+.card-img{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+#card-img1{
+    background: url(images/Einstein.jpg)no-repeat center;
+    background-size: cover;
+}
+#card-img2{
+    background: url(images/albertt.jpg)no-repeat center;
+    background-size: cover; 
+}
+#card-img3{
+    background: url(images/einstein-.jpg)no-repeat center;
+    background-size: cover;
+}
+#card-img4{
+    background: url(images/Einstein.jpg)no-repeat center;
+    background-size: cover;
+}
+.card-text{
+    position: absolute;
+    left:50%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+.card-text a{
+    text-decoration: none;
+    color: #4c4545
+}
+.card-text a:hover{
+    color: black;
+}
+
+/*for the Schedule page*/
+.schedule-main-topic{
+    width: 1500px;
+    margin: auto;
+    height: auto;
+    padding: 50px 200px;
+    background-color: white;
+}
+table{
+    width: 1000px;
+    height: auto;
+    font-size: 20px;
+    color: dimgrey;
+    margin:40px auto;
+}
+table th{
+    width: 30%;
+    padding: 8px 0;
+    color: grey;
+}
+table td{
+    width: 35%%;
+    border-bottom: 1px solid black;
+    padding: 8px 0;
+}
+.name{
+    font-size: 30px;
+    color: #e98074;
+    text-align: center;
+}
+.guest-speakers{
+    color:#e98074;
+    text-transform: uppercase;
+}
+
+/*This is for the Venue page*/
+.venue-main-topic{
+    width: 1500px;
+    margin: auto;
+    height: auto;
+    padding: 100px 200px;
+    background-color: white;
+}
+.chicago-theatre{
+    width: 100%;
+    height: 400px;
+    margin: auto;
+}
+.four-seasons{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+}
+.address{
+    float: left;
+    width: 400px;
+    font-size: 20px;
+    color: dimgrey;
+}
+.address h2{
+    color: #e98074;
+    padding: 10px 0
+}
+.address a{
+    color: #e98074;
+    text-decoration: none;
+}
+.address a:hover{
+    color: red;
+    font-size: 24px;
+    transition: 0.5s ease;
+}
+.map{
+    float: right;
+    width: 700px;
+}
+iframe:hover{
+    box-shadow: 4px 4px 4px grey;
+}
+
+/*THIS IS FOR REGISTER PAGE*/
+.register-main-topic{
+    width: 1500px;
+    margin: auto;
+    height: 600px;
+    padding: 0 200px;
+    background-color: white;
+}
+.register-info{
+    width: 50%;
+    height: auto;
+    float: left;
+    padding: 30px;
+    font-size: 20px
+}a
+.register-info h2{
+    color: #e98074;
+}
+.register-info h3{
+    color: #e98074;
+    padding: 20px 0
+}
+.price{
+    padding: 20px 0;
+}
+ul {
+    list-style-type: square;
+}
+.register-form{
+    width: 50%;
+    height: auto;
+    float: right;
+    padding: 30px 0 30px 100px;
+}
+label{
+    display: block;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #e98074;
+}
+input{
+    display: block;
+    width: 300px;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid silver;
+    border-radius: 6px;
+    outline: none;
+}
+.entry-field:focus::placeholder{
+    color: transparent;
+}
+select{
+    width: 80px;
+    display: block;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid silver;
+    border-radius: 6px;
+    outline: none;
+    color: silver;
+}
+textarea{
+    width: 300px;
+    height: 100px;
+    display: block;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid silver;
+    border-radius: 6px;
+    outline: none;
+}
+button{
+    padding: 12px 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: #e85a4f;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    margin-left: 80px;
+    margin-top: 30px
+}
+button:hover{
+    color:  #e85a4f;
+    background-color: white;
+    border: 1px solid #e85a4f;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px #e85a4f;
+}

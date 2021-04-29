@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+ul.topnav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;   
+}
+ul.topnav li{
+    float: left;
+}
+ul.topnav li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+ul.topnav li:last-child{
+    float: right;
+}
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+ul.topnav li a.active{
+    background-color: #4CAF50;
+}
+@media screen and (max-width:600px){
+    ul.topnav li:last-child,
+    ul.topnav li{float: none;}    
+}
+.text{
+    padding: 25px;
+    font-size: 25px;   
+}

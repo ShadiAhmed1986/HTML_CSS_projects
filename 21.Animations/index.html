@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Animations</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, ">
+        <link rel="stylesheet" href="styling.css">
+        <style>
+            div{
+                font-size: 50px;
+                position: relative;
+                width: 400px;
+                height: 100px;
+                text-align: center;
+                background-color: aqua;
+/*               SHORTHAND; 
+                animation: myanimation 5s linear 1s infinßite alternate;*/
+                animation-name: myanimation;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-delay: 1s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            @keyframes myanimation{
+                0%{left: 100px; top: 300px;}
+                100%{left:100px; top: 0px}
+            }
+           
+        
+        </style>  
+    </head>
+    <body>
+        <div class="animation"><p>My Animation</p></div>
+    </body>
